@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+section {
+  width: 30%;
+  background-color: rgba(255, 255, 0, 0.684);
+  margin: 20px;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+}
+label {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+label input {
+  width: 40%;
+  height: 20px;
+  transition: width 0.5s, height 0.5s;
+}
+label input:focus {
+  transition: width 0.5s, height 0.5s;
+  transition-delay: 0.3s;
+  width: 40vw;
+  height: 50px;
+}
