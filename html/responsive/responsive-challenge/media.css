@@ -1,0 +1,26 @@
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+div {
+  background: url(./mike-tyson.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+}
+@media screen and (max-width: 800px) {
+  div {
+    max-width: 200px;
+    width: px;
+    height: 1px;
+  }
+}
+@media screen and (max-width: 600px) {
+  div {
+    width: 200px;
+    height: 200px;
+  }
+}
