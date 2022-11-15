@@ -1,0 +1,41 @@
+body {
+  background-color: aqua;
+  font-size: 20px;
+}
+h1 {
+  font-size: 48px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+@media screen and (max-width: 800px) {
+  header {
+    display: block;
+  }
+  body {
+    background-color: orange;
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 600px) {
+  ul {
+    display: block;
+  }
+  body {
+    background-color: green;
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+}
