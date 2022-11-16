@@ -65,15 +65,137 @@ ul li {
   .firstMenu {
     gap: 20px;
   }
+  .sec .container {
+    display: block;
+  }
+}
+.left {
+  width: 25%;
+  align-self: flex-start;
+}
+.right {
+  width: 70%;
+  padding: 20px;
+  margin-top: 0;
+  padding-top: 0;
+  border-left: solid black 2px;
+}
+.leftImg a h2 {
+  font-size: 24px;
+  color: white;
+  margin: 0;
+}
+.leftImg a p {
+  color: white;
+}
+.leftImg {
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+.left a {
+  color: black;
+  font-weight: bold;
+  display: block;
+  font-size: 24px;
+  margin-top: 20px;
 }
 .sec .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 30px auto;
 }
 .leftImg {
   background: url(./img/jermall.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 250px;
+  width: 100%;
+  border-radius: 20px;
+}
+.rightTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.topLeft {
+  width: 20%;
+  align-self: flex-start;
+}
+.topRight {
+  width: 70%;
+}
+.topLeft a h3 {
+  color: black;
+  margin: 0;
+}
+.topLeft img {
+  width: 100px;
+  height: 70px;
+}
+.info img {
+  height: 200px;
+  width: 300px;
+  border-radius: 20px;
+}
+.info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.shortcut {
+  margin-top: 20px;
+}
+.shortcut img {
+  border-radius: 10px;
+}
+.shortcut:first-child {
+  margin-top: 0;
+}
+.rightBottom {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.rightBottom p {
+  margin: 0;
+}
+.option {
+  width: 50%;
+}
+.option p {
+  display: inline;
+}
+.rightBottom {
+}
+.button {
+  align-self: flex-end;
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  margin: 0;
+}
+.footerFirst {
+  width: 10%;
+}
+.footerFirst ul {
+  padding: 0;
+}
+.footerSecond {
+  width: 30%;
+  gap: -40px;
+}
+.footerThird {
+  width: 10%;
 }
