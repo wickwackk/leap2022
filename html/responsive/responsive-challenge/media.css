@@ -1,26 +1,65 @@
-section {
-  display: flex;
-  flex-wrap: wrap;
-}
-div {
-  background: url(./mike-tyson.webp);
-  background-repeat: no-repeat;
+header {
+  background: url(./img/coverr.jpeg) rgba(255, 68, 0, 0.549);
+  background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
-  width: 250px;
-  height: 250px;
-  margin: 20px;
+  height: 500px;
+  padding-left: 200px;
+  padding-top: 300px;
 }
-@media screen and (max-width: 800px) {
-  div {
-    max-width: 200px;
-    width: px;
-    height: 1px;
+h1 {
+  color: white;
+  font-size: 48px;
+}
+p {
+  color: white;
+  font-size: 24px;
+}
+body {
+  margin: 0;
+}
+section {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1380px;
+  width: 100%;
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+div img {
+  width: 300px;
+  height: 300px;
+}
+@media screen and (max-width: 1380px) {
+  div img {
+    width: 300px;
+    height: 300px;
   }
 }
-@media screen and (max-width: 600px) {
-  div {
-    width: 200px;
-    height: 200px;
+@media screen and (max-width: 1200px) {
+  div img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 992px) {
+  div img {
+    width: 360px;
+    height: 360px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 12px;
+  }
+  div img {
+    width: 500px;
+    height: 500px;
   }
 }
