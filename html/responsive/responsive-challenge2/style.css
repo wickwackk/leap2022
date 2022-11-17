@@ -77,7 +77,7 @@ ul li {
   margin-top: 20px;
 }
 .sec .container {
-  display: block;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 30px auto;
@@ -115,10 +115,8 @@ ul li {
   height: 200px;
   width: 300px;
   border-radius: 20px;
-}
-.info {
-  display: flex;
-  flex-wrap: wrap;
+  float: left;
+  margin-right: 20px;
 }
 .shortcut {
   margin-top: 20px;
@@ -176,23 +174,7 @@ footer h3 {
 .footerThird {
   width: 10%;
 }
-@media screen and (max-width: 570px) {
-  header .container {
-    flex-wrap: wrap;
-  }
-  .headerRight {
-    justify-content: end;
-    width: 50%;
-  }
-  .firstMenu {
-    display: none;
-  }
-  .secondMenu {
-    display: flex;
-    gap: 20px;
-  }
-}
-@media screen and (max-width: 768px) and (min-width: 571px) {
+@media screen and (max-width: 900px) and (min-width: 654px) {
   .firstMenu {
     gap: 20px;
   }
@@ -215,6 +197,7 @@ footer h3 {
   .info img {
     width: 450px;
     height: 250px;
+    float: none;
   }
   .sec .container {
     display: block;
@@ -227,5 +210,57 @@ footer h3 {
   }
   .footerSecond {
     width: 30%;
+  }
+}
+@media screen and (max-width: 653px) {
+  .container {
+    max-width: 480px;
+    margin: auto;
+    width: 100%;
+  }
+  header .container {
+    flex-wrap: wrap;
+  }
+  .headerRight {
+    justify-content: end;
+    width: 50%;
+  }
+  .firstMenu {
+    display: none;
+  }
+  .secondMenu {
+    display: flex;
+    gap: 20px;
+  }
+  .sec .container {
+    display: block;
+  }
+  .left {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom: 2px black solid;
+    padding-bottom: 20px;
+  }
+  .left a {
+    text-align: center;
+  }
+  .leftImg a {
+    text-align: start;
+  }
+  .right {
+    display: block;
+    border-left: none;
+    width: 100%;
+  }
+  .topLeft {
+    width: 100%;
+    text-align: center;
+  }
+  .topRight {
+    width: 100%;
+  }
+  .rightTop {
+    display: block;
   }
 }
