@@ -1,4 +1,9 @@
-let num1 = parseFloat(prompt("Enter first number"));
-let num2 = parseFloat(prompt("Enter second number"));
-alert("2 toonii niilber n: " + (num1 + num2));
-alert("2 toog huvaagad uldegdel n: " + (num1 % num2));
+let a = 25;
+let b = 20;
+let c = 30;
+
+if (a >= b && a >= c) {
+  console.log("a hmgin ih");
+} else {
+  console.log("a hmgin baga");
+}
