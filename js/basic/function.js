@@ -91,12 +91,6 @@ if (
 }
 
 //ternary
-if (age < 21) {
-  console.log("you are not allowed to drink alcohol");
-} else {
-  console.log("you are allowed to drink alcohol");
-}
-
 age < 21
   ? console.log("you are not allowed to drink alcohol")
   : console.log("you are allowed to drink alcohol");
