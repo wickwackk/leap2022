@@ -1,15 +1,15 @@
-let x = 10;
-let count = 1;
-let output = "";
+let n = 2;
+let prime = true;
 
-while (x > 0) {
-  let y = 10;
-  while (y > 0) {
-    output = output + count + " \t";
-    if (count % 10 == 0) output += "\n"; // output = output +"\n"
-    y--;
-    count++;
+for (let i = 2; i < n; i++) {
+  if (n % i == 0) {
+    prime = false;
+    break;
   }
-  x--;
 }
-console.log(output);
+
+if (prime == true) {
+  console.log("Yes");
+} else {
+  console.log("No");
+}

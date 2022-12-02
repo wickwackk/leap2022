@@ -69,3 +69,146 @@ while (x > 0) {
   x--;
 }
 console.log(output);
+
+//For loop
+for (let i = 1; i <= 10; i++) {
+  //things to do while condition is true
+}
+
+//exercise
+let str = "";
+
+for (let i = 1; i <= 9; i++) {
+  for (let j = 1; j <= 9; j++) {
+    str += j + " ";
+    debugger;
+  }
+  str += "\n";
+}
+console.log(str);
+
+//Star hollow
+let num = 7;
+let str = "";
+
+for (let i = 1; i <= num; i++) {
+  if (i > 1 && i < num) {
+    for (let j = 1; j <= num; j++) {
+      if (j > 1 && j < num) {
+        str += " ";
+      } else {
+        str += "*";
+      }
+    }
+  } else {
+    for (let j = 1; j <= num; j++) {
+      str += "*";
+    }
+  }
+  str += "\n";
+}
+console.log(str);
+
+// toon hollow
+let num = 7;
+let str = "";
+
+for (let i = 1; i <= num; i++) {
+  if (i > 1 && i < num) {
+    for (let j = 1; j <= num; j++) {
+      if (j > 1 && j < num) {
+        str += "  ";
+      } else {
+        str += j + " ";
+      }
+    }
+  } else {
+    for (let j = 1; j <= num; j++) {
+      str += j + " ";
+    }
+  }
+  str += "\n";
+}
+console.log(str);
+
+//rowiin toon hollow
+let num = 7;
+let str = "";
+
+for (let i = 1; i <= num; i++) {
+  if (i > 1 && i < num) {
+    for (let j = 1; j <= num; j++) {
+      if (j > 1 && j < num) {
+        str += "  ";
+      } else {
+        str += i + " ";
+      }
+    }
+  } else {
+    for (let j = 1; j <= num; j++) {
+      str += i + " ";
+    }
+  }
+  str += "\n";
+}
+console.log(str);
+
+//gurvaljin
+let str = "";
+let input = 7;
+for (let i = 1; i <= input; i++) {
+  for (let j = 1; j <= i; j++) {
+    str += j + " ";
+  }
+  str += "\n";
+}
+console.log(str);
+
+//3n ornoor tusgaarlay
+let number = "123456789";
+console.log(number.charAt(number.length - 3));
+console.log(number.substring(1, 3));
+
+number =
+  number.substring(0, number.length - 3) +
+  "_" +
+  number.substring(number.length - 3, number.length);
+
+console.log(number);
+
+// pass
+let password = "123";
+let input; // undefined
+
+while (password != input) {
+  input = prompt("Enter your password: ");
+}
+
+//utsnii dugaar
+let number;
+
+while (true) {
+  number = prompt("Enter your password again: ");
+  let firstChar = number.charAt(0);
+  number = Number(number);
+  if (Number.isInteger(number) && (firstChar == "9" || firstChar == "8")) {
+    break;
+  }
+}
+
+//prime number
+let n = 2;
+let prime = true;
+
+for (let i = 2; i < n; i++) {
+  if (n % i == 0) {
+    prime = false;
+    break;
+  }
+}
+
+if (prime == true) {
+  console.log("Yes");
+} else {
+  console.log("No");
+}
