@@ -1,9 +1,20 @@
-let studentNames = ["boldo", "dorjo", "tsetsgee", "dulmaa"];
-let i = 0;
+let num = 7;
+let str = "";
 
-while (i <= studentNames.length) {
-  if (studentNames[i] && studentNames[i][0] === "d") {
-    console.log(studentNames[i]);
+for (let i = 1; i <= num; i++) {
+  if (i > 1 && i < num) {
+    for (let j = 1; j <= num; j++) {
+      if (j > 1 && j < num) {
+        str += "  ";
+      } else {
+        str += i + " ";
+      }
+    }
+  } else {
+    for (let j = 1; j <= num; j++) {
+      str += i + " ";
+    }
   }
-  i++;
+  str += "\n";
 }
+console.log(str);
