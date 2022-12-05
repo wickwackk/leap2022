@@ -1,15 +1,9 @@
-let n = 2;
-let prime = true;
+let studentNames = ["boldo", "dorjo", "tsetsgee", "dulmaa"];
+let i = 0;
 
-for (let i = 2; i < n; i++) {
-  if (n % i == 0) {
-    prime = false;
-    break;
+while (i <= studentNames.length) {
+  if (studentNames[i] && studentNames[i][0] === "d") {
+    console.log(studentNames[i]);
   }
-}
-
-if (prime == true) {
-  console.log("Yes");
-} else {
-  console.log("No");
+  i++;
 }
