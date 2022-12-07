@@ -1,20 +1,15 @@
-let num = 7;
-let str = "";
+let n = 2;
+let prime = true;
 
-for (let i = 1; i <= num; i++) {
-  if (i > 1 && i < num) {
-    for (let j = 1; j <= num; j++) {
-      if (j > 1 && j < num) {
-        str += "  ";
-      } else {
-        str += i + " ";
-      }
-    }
-  } else {
-    for (let j = 1; j <= num; j++) {
-      str += i + " ";
-    }
+for (let i = 2; i < n; i++) {
+  if (n % i == 0) {
+    prime = false;
+    break;
   }
-  str += "\n";
 }
-console.log(str);
+
+if (prime == true) {
+  console.log("Yes");
+} else {
+  console.log("No");
+}
