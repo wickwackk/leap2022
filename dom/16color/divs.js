@@ -17,12 +17,7 @@ for (let i = 0; i < 16; i++) {
   newDiv.style.textAlign = "center";
   mainDiv.appendChild(newDiv);
   if (i == d) {
-    newDiv.style.width = "200px";
-    newDiv.style.height = "200px";
-    newDiv.style.border = "1px solid black";
     newDiv.style.backgroundColor = `rgb(${a - 30}, ${b - 30}, ${c - 30}`;
     newDiv.innerText = `rgb: ${a - 30},${b - 30}, ${c - 30}`;
-    newDiv.style.textAlign = "center";
-    mainDiv.appendChild(newDiv);
   }
 }
