@@ -13,12 +13,11 @@ fetch("https://dog.ceo/api/breeds/list")
 
 let option = document.querySelector("option");
 let card = document.querySelector(".card");
+let newImg = document.createElement("img");
 
 select.addEventListener("change", () => {
   let dogName = select.value;
-  card.innerHTML = "";
-  let img = document.createElement("img");
-  card.appendChild(img);
+  card.appendChild(newImg);
   let realImg = document.querySelector("img");
   fetch(`https://dog.ceo/api/breed/${dogName}/images/random`)
     .then((res) => res.json())
@@ -29,9 +28,7 @@ select.addEventListener("change", () => {
 
 card.addEventListener("click", () => {
   let dogName = select.value;
-  card.innerHTML = "";
-  let img = document.createElement("img");
-  card.appendChild(img);
+  card.appendChild(newImg);
   let realImg = document.querySelector("img");
   fetch(`https://dog.ceo/api/breed/${dogName}/images/random`)
     .then((res) => res.json())
