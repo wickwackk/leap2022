@@ -52,25 +52,33 @@
               class="form-select"
               aria-label="Default select example"
             >
-              <option selected>Choose the brand name</option>
+              <option id="brandSelected" selected>Choose the brand name</option>
             </select>
             <select
               id="modelSelect"
               class="form-select"
               aria-label="Default select example"
             >
-              <option selected>Choose the model</option>
+              <option id="modelSelected" selected>Choose the model</option>
             </select>
           </div>
           <div class="modal-footer">
             <button
+              id="closeBtn"
               type="button"
               class="btn btn-secondary"
               data-bs-dismiss="modal"
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Search</button>
+            <button
+              id="searchBtn"
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Search
+            </button>
           </div>
         </div>
       </div>
